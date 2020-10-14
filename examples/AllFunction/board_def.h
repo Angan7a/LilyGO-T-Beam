@@ -33,15 +33,14 @@ RADIO_TYPE option:
             - SX1276
             - SX1262
 */
-#define RADIO_TYPE      SX1262
+#define RADIO_TYPE      SX1276
 
 /*
 Fill in the frequency according to the actual situation
 LORA_PERIOD option:
             - 433,470,868,915
 */
-#define LORA_PERIOD     915
-
+#define LORA_PERIOD     868
 
 #define LORA_SCK        5
 #define LORA_MISO       19
@@ -99,3 +98,4 @@ UBLOX_GPS_OBJECT()
 #define BUZZER_PIN          4
 
 #endif /*BOARD_DEF_H*/
+

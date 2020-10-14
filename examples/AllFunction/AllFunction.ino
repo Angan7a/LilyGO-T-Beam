@@ -42,7 +42,7 @@ bool receivedFlag = false;
 // disable interrupt when it's not needed
 bool enableInterrupt = true;
 
-RADIO_TYPE radio = new Module(LORA_SS, LORA_DIO1, LORA_RST, LORA_BUSY);
+RADIO_TYPE radio = new Module(LORA_SS, LORA_DI0, LORA_RST, LORA_BUSY);
 
 
 /************************************
@@ -268,7 +268,7 @@ void lora_init()
 
     // set the function that will be called
     // when new packet is received
-    radio.setDio1Action(setFlag);
+    radio.setDio0Action(setFlag);
 
 }
 
